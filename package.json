@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "package": "rimraf --glob ./comic-universe-plugin-template*.tgz && npm pack",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "comic-universe",
@@ -21,7 +22,6 @@
     "@types/qs": "^6.9.15",
     "nodemon": "^3.1.4",
     "rimraf": "^6.0.1",
-    "tsc": "^2.0.4",
     "typescript": "^5.5.4"
   }
 }
