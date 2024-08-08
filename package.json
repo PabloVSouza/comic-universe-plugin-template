@@ -2,14 +2,12 @@
   "name": "comic-universe-plugin-template",
   "version": "0.0.1",
   "main": "dist/index.js",
+  "author": "Pablo Souza",
+  "license": "MIT",
+  "description": "Plugin template for creating plugins for Comic Universe 2.0 onwards.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pablovsouza/comic-universe-plugin-template.git"
-  },
-  "scripts": {
-    "package": "rimraf --glob ./comic-universe-plugin-template*.tgz && npm pack",
-    "build": "tsc",
-    "postinstall": "npm run build"
   },
   "keywords": [
     "comic-universe",
@@ -18,15 +16,17 @@
     "plugin",
     "template"
   ],
-  "author": "Pablo Souza",
-  "license": "MIT",
-  "description": "Plugin template for creating plugins for Comic Universe 2.0 onwards.",
+  "scripts": {
+    "package": "rimraf --glob ./comic-universe-plugin-template*.tgz && npm pack",
+    "build": "tsc",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.1.0",
     "@types/qs": "^6.9.15",
-    "nodemon": "^3.1.4",
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "bundledDependencies": []
 }
