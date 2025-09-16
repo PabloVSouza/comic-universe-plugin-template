@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/pablovsouza/comic-universe/blob/master/src/renderer/assets/icon.svg?raw=true" width="200">
+  <img src="https://github.com/pablovsouza/comic-universe/blob/main/src/renderer/assets/icon.svg?raw=true" width="200">
   <h1>Comic Universe Plugin Template</h1>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
   <a href="https://github.com/prisma/prisma/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
@@ -28,7 +28,7 @@ Please avoid using unnecessary dependencies, as it would make the main app heavi
 
 ## ✨ Latest Updates (v0.1.0)
 
-- **Updated TypeScript interfaces** to match Comic Universe 2.0+ 
+- **Updated TypeScript interfaces** to match Comic Universe 2.0+
 - **Enhanced IComic interface** with new settings system for reading preferences
 - **Per-comic customization** support for reading mode and direction
 - **Improved type safety** with proper TypeScript 5.9+ support
