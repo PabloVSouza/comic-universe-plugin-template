@@ -26,6 +26,14 @@ Feel free to fork this repository and start developing your own plugin, just fol
 
 Please avoid using unnecessary dependencies, as it would make the main app heavier.
 
+## ✨ Latest Updates (v0.1.0)
+
+- **Updated TypeScript interfaces** to match Comic Universe 2.0+ 
+- **Enhanced IComic interface** with new settings system for reading preferences
+- **Per-comic customization** support for reading mode and direction
+- **Improved type safety** with proper TypeScript 5.9+ support
+- **Better plugin integration** with latest architecture
+
 ### How can i test the plugin?
 
 Comic Universe (Only on version 2.0 onwards) will look for the folder called **plugins**, inside the **comic-universe** folder, on the following path:

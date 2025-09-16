@@ -6,31 +6,31 @@ class ExampleRepoPlugin implements IRepoPluginRepository {
   constructor(data: IRepoPluginRepositoryInit) {}
 
   public methods: IRepoPluginMethods = {
-    getList: async (): Promise<ComicInterface[]> => {
+    getList: async (): Promise<IComic[]> => {
       return new Promise((resolve) => {
         resolve([])
       })
     },
 
-    search: async ({ search }): Promise<ComicInterface[]> => {
+    search: async ({ search }): Promise<IComic[]> => {
       return new Promise((resolve) => {
         resolve([])
       })
     },
 
-    getDetails: async (search): Promise<Partial<ComicInterface>> => {
+    getDetails: async (search): Promise<Partial<IComic>> => {
       return new Promise((resolve) => {
         resolve({})
       })
     },
 
-    getChapters: async ({ siteId }): Promise<ChapterInterface[]> => {
+    getChapters: async ({ siteId }): Promise<IChapter[]> => {
       return new Promise((resolve) => {
         resolve([])
       })
     },
 
-    getPages: async ({ siteLink }) => {
+    getPages: async ({ siteLink }): Promise<IPage[]> => {
       return new Promise((resolve) => {
         resolve([])
       })
