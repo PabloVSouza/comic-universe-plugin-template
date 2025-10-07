@@ -1,32 +1,27 @@
 {
   "name": "comic-universe-plugin-template",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "author": "Pablo Souza",
-  "license": "MIT",
-  "description": "Plugin template for creating plugins for Comic Universe 2.0 onwards.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pablovsouza/comic-universe-plugin-template.git"
-  },
-  "keywords": [
-    "comic-universe",
-    "comic",
-    "universe",
-    "plugin",
-    "template"
-  ],
+  "private": true,
   "scripts": {
-    "package": "rimraf --glob ./comic-universe-plugin-template*.tgz && npm pack",
-    "build": "tsc",
-    "postinstall": "npm run build"
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.4"
+  },
   "devDependencies": {
-    "@types/node": "^22.1.0",
-    "@types/qs": "^6.9.15",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.9.2"
-  },
-  "bundledDependencies": []
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "@eslint/eslintrc": "^3"
+  }
 }
