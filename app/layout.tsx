@@ -12,6 +12,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Comic Universe Plugin Template",
   description: "Template plugin for Comic Universe",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
