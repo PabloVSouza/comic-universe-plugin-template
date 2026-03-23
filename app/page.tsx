@@ -11,12 +11,13 @@ export default function Home() {
     try {
       const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
       const pluginUrl = `${baseUrl}/api`
-      const pluginName = 'Comic Universe Plugin Template'
-      const pluginTag = 'comic-universe-plugin-template'
+      const pluginMetadataUrl = `${baseUrl}/api/metadata`
+      const pluginName = 'UTOON'
+      const pluginTag = 'utoon'
 
       const deepLink = `comic-universe://plugin/install?url=${encodeURIComponent(
         pluginUrl
-      )}&name=${encodeURIComponent(pluginName)}&tag=${encodeURIComponent(pluginTag)}`
+      )}&metadataUrl=${encodeURIComponent(pluginMetadataUrl)}&name=${encodeURIComponent(pluginName)}&tag=${encodeURIComponent(pluginTag)}`
 
       setInstallStatus('Opening Comic Universe...')
 
@@ -54,11 +55,11 @@ export default function Home() {
                 '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 0px 2px 0px #000, 0px -2px 0px #000, 2px 0px 0px #000, -2px 0px 0px #000'
             }}
           >
-            Comic Universe Plugin Template
+            Comic Universe Plugin - UTOON
           </h1>
           <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
-            A template plugin for Comic Universe. This provides a starting point for creating new
-            plugins that integrate with the Comic Universe application.
+            Remote Comic Universe plugin for browsing UTOON titles, chapters, and page lists
+            through the standard plugin HTTP API.
           </p>
         </div>
 
@@ -71,11 +72,11 @@ export default function Home() {
                   '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 0px 2px 0px #000, 0px -2px 0px #000, 2px 0px 0px #000, -2px 0px 0px #000'
               }}
             >
-              API Endpoints
+              UTOON API
             </h2>
             <p className="text-white/80 text-lg mb-6">
-              This template includes all the required API endpoints that Comic Universe expects from
-              a plugin:
+              This plugin exposes the endpoints Comic Universe needs for searching UTOON, loading
+              chapters, and fetching pages on demand:
             </p>
           </div>
 
@@ -107,8 +108,8 @@ export default function Home() {
           </div>
 
           <p className="text-white/60 text-sm text-center mb-8">
-            All endpoints are currently implemented as generic stubs that return empty data. You can
-            customize them to connect to your own data source.
+            UTOON is protected by Cloudflare. If your deployment is blocked, configure
+            `UTOON_COOKIE` or `UTOON_CF_CLEARANCE` in the hosting environment.
           </p>
 
           <div className="flex flex-col items-center gap-4">

@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Roboto } from 'next/font/google'
+import './globals.css'
 
 const roboto = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-roboto",
-});
+  weight: ['100', '300', '400', '500', '700', '900'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-roboto'
+})
 
 export const metadata: Metadata = {
-  title: "Comic Universe Plugin Template",
-  description: "Template plugin for Comic Universe",
+  title: 'Comic Universe Plugin - UTOON',
+  description: 'Plugin for Comic Universe backed by UTOON',
   icons: {
-    icon: "/icon.png",
-  },
-};
+    icon: '/icon.png'
+  }
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -37,5 +37,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
